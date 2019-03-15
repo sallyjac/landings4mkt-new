@@ -1,0 +1,223 @@
+{
+    box-sizing: border-box;
+}
+
+body {
+    /*largeur doit prendre toute la fenetre*/
+    width: 100%;
+    /** Ajout de la police **/
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+}
+
+
+h1 {
+    /*titre en blanc et gras **/
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.2em;
+    font-weight: normal;
+    background-color: #965878;
+    padding: 5px 5px;
+    text-align: center;
+
+}
+
+p {
+    /**** justification d'un texte **/
+    text-align: justify;
+
+}
+
+.bold {
+    /*** pour mettre qql chose en gras **/
+    font-weight: bold;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+header {
+    background-color: #C499AF;
+    height: 17vh;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.profil {
+    overflow: hidden;
+    /** hauteur et largeur de l'image **/
+    width: 150px;
+    height: 150px;
+    /*** pour qu'elle puisse descende sous la ligne violette **/
+    margin-bottom: -50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+/******* Colonne de gauche ****/
+
+#col-gauche {
+    display: flex;
+    flex-direction: column;
+    /*** largeur de la colonne de gauche **/
+    width: 15%;
+    background-color: #C499AF;
+
+
+}
+
+#col-gauche p {
+    color: white;
+    line-height: 8px;
+    font-size: 0.6em;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+ .bar {
+    /* font-size: 10px */
+    width: 30em
+    height: 1em
+    border-radius: 0.5em
+    position: relative
+    background: #f2f2f2
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1)
+  }
+
+   .bar .percentage {
+    position: relative
+    font-size: 1em
+    background: tomato
+    height: 1em
+    border-radius: 0.5em
+  }
+  
+.interets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*** 0px de marge en haut et en bas - 10px de marge à droite et à gauche **/
+    margin: 0 10px;
+}
+
+.interets img {
+    /*** hauteur largeur des images **/
+    width: 40px;
+    height: 40px;
+
+}
+
+.reseaux-sociaux {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /** 50px de marge en haut - 30px à droite - 10px en bas - 30px à gauche **/
+    margin: 50px 30px 10px 30px;
+}
+
+.reseaux-sociaux img {
+    width: 30px;
+    height: 30px;
+}
+
+.reseaux-sociaux img:hover {
+    /*** effet de zoom quand on passe la souris sur l'image **/
+    transform: scale(1.1);
+}
+
+/******* Milieu *****/
+
+#milieu {
+    margin: 0 50px;
+    /*** Largeur de la colonne du milieu ***/
+    width: 35%;
+}
+
+
+
+/****** Colonne droite ****/
+
+#col-droite {
+    margin-right: 50px;
+    /*** largeur de la colonne de droite **/
+    width: 45%;
+}
+
+
+
+/****** Responsive ****/
+
+@media screen and (max-width: 1000px) {
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .profil {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+    }
+
+    #col-gauche {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    #col-gauche p {
+        text-align: center;
+    }
+
+    .interets {
+        justify-content: space-around;
+    }
+
+    #milieu {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    #col-droite {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+}
+
