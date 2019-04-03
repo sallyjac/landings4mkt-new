@@ -1,223 +1,160 @@
-{
-    box-sizing: border-box;
+
+/**** Général ***/
+h2.title {
+	font-weight: bold;
+	color: #ff7675;
+	text-transform: uppercase;
+	font-size: 1.8rem;
 }
 
-body {
-    /*largeur doit prendre toute la fenetre*/
-    width: 100%;
-    /** Ajout de la police **/
-    font-family: 'Open Sans', sans-serif;
-    margin: 0 auto;
+/**** Navigation ****/
+#mainNav.navbar-shrink .nav-link.active {
+	color: #ff7675;
+	border-bottom:.25rem solid #ff7675;
+}
+
+#mainNav.navbar-shrink .nav-link:hover {
+	color: #ff7675;
+}
+
+#mainNav .navbar-toggler {
+	color: #ff7675;
+    border: 1px solid #ff7675;
 }
 
 
-h1 {
-    /*titre en blanc et gras **/
-    text-transform: uppercase;
-    color: white;
-    font-size: 1.4em;
-    font-weight: bold;
-    margin: 0;
+/**** Header ****/
+.masthead {
+	z-index: -1;
+	height: 100vh !important;
 }
 
-h2 {
-    text-transform: uppercase;
-    color: white;
-    font-size: 1.2em;
-    font-weight: normal;
-    background-color: #965878;
-    padding: 5px 5px;
+.encadre-blanc {
+	background-color: white;
+	opacity:0.7;
+	padding: 50px 50px;
+}
+
+.encadre-blanc h1 {
+	background-color: inherit !important;
+	color: black !important;
+	font-family: Nunito !important;
+	font-size:3rem;
+}
+
+.encadre-blanc h2 {
+	color: black !important;
+}
+
+.social {
+	margin-top: -25px;
+	z-index: 99;
+}
+
+.social a {
     text-align: center;
-
-}
-
-p {
-    /**** justification d'un texte **/
-    text-align: justify;
-
-}
-
-.bold {
-    /*** pour mettre qql chose en gras **/
-    font-weight: bold;
-}
-
-
-main {
-    display: flex;
-    flex-direction: row;
-
-}
-
-
-header {
-    background-color: #C499AF;
-    height: 17vh;
-    margin-bottom: 5%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
-.profil {
-    overflow: hidden;
-    /** hauteur et largeur de l'image **/
-    width: 150px;
-    height: 150px;
-    /*** pour qu'elle puisse descende sous la ligne violette **/
-    margin-bottom: -50px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-}
-
-/******* Colonne de gauche ****/
-
-#col-gauche {
-    display: flex;
-    flex-direction: column;
-    /*** largeur de la colonne de gauche **/
-    width: 15%;
-    background-color: #C499AF;
-
-
-}
-
-#col-gauche p {
+    height: 3rem;
+    width: 3rem;
+    background: #ff7675;
+    border-radius: 100%;
+    line-height: 3rem;
     color: white;
-    line-height: 8px;
-    font-size: 0.6em;
-    padding-left: 10px;
-    padding-right: 10px;
-
 }
 
- .bar {
-    /* font-size: 10px */
-    width: 30em
-    height: 1em
-    border-radius: 0.5em
-    position: relative
-    background: #f2f2f2
-    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1)
-  }
-
-   .bar .percentage {
-    position: relative
-    font-size: 1em
-    background: tomato
-    height: 1em
-    border-radius: 0.5em
-  }
-  
-.interets {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /*** 0px de marge en haut et en bas - 10px de marge à droite et à gauche **/
-    margin: 0 10px;
+.social a:hover {
+	color: white;
+	transform: scale(1.1);
 }
 
-.interets img {
-    /*** hauteur largeur des images **/
-    width: 40px;
-    height: 40px;
 
+/**** Section Experiences ****/
+#experiences {
+	margin-top: 5rem;
 }
 
-.reseaux-sociaux {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /** 50px de marge en haut - 30px à droite - 10px en bas - 30px à gauche **/
-    margin: 50px 30px 10px 30px;
+.experiences-section {
+	background-color: white;
 }
 
-.reseaux-sociaux img {
-    width: 30px;
-    height: 30px;
+.experiences-section h4 {
+	font-weight: bold;
+	font-size:1.1rem;
 }
 
-.reseaux-sociaux img:hover {
-    /*** effet de zoom quand on passe la souris sur l'image **/
-    transform: scale(1.1);
+.experiences-section h3 {
+	color: #ff7675;
+	font-style:italic;
+	font-size:1.3rem;
+	margin: 25px 0;
 }
 
-/******* Milieu *****/
+.experiences-section ul {
+	padding-left: 14px;
+	max-width: 90%;
+}
 
-#milieu {
-    margin: 0 50px;
-    /*** Largeur de la colonne du milieu ***/
-    width: 35%;
+.experiences-section p, .experiences-section li {
+	font-size:14px;
 }
 
 
 
-/****** Colonne droite ****/
 
-#col-droite {
-    margin-right: 50px;
-    /*** largeur de la colonne de droite **/
-    width: 45%;
+/**** Section Compétences ******/
+#competences {
+	margin-top: 7rem;
+}
+
+/***** Section Formation *******/
+#formations {
+	margin-top: 10rem;
+}
+
+.formations-section h4 {
+	font-weight: bold;
+	font-size:1.1rem;
+}
+
+.formations-section h3 {
+	color: #ff7675;
+	font-style:italic;
+	font-size:1.3rem;
+	margin: 20px 0;
+}
+
+/***** Contact Section *********/
+.contact-section .card hr {
+	border-color: #ff7675;
+}
+
+.contact-section .card {
+    border-bottom: .25rem solid #ff7675;
+}
+
+.contact-section .card h4 {
+	font-family: Nunito !important;
+}
+
+.contact-section a {
+	color: #ff7675;
 }
 
 
+/***** RESPONSIVE *****/
 
-/****** Responsive ****/
-
-@media screen and (max-width: 1000px) {
-
-
-    header {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-    }
-    
-    main {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .profil {
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 20px;
-    }
-
-    #col-gauche {
-        width: 70%;
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
-    }
-
-    #col-gauche p {
-        text-align: center;
-    }
-
-    .interets {
-        justify-content: space-around;
-    }
-
-    #milieu {
-        width: 70%;
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
-    }
-
-    #col-droite {
-        width: 70%;
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
-    }
+@media (min-width: 992px) {
+	.competences-section .featured-text {
+	    padding: 0 0 0 2rem;
+	    border-left: .5rem solid #ff7675;
+	}
 }
 
+@media (max-width: 991px) {
+	h2.title {
+		margin:auto;
+	}
+
+	.formations-section {
+		text-align: center;
+	}
+}
